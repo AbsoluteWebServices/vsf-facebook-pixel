@@ -38,8 +38,8 @@ export default (fbq, currency) => {
       currency,
       num_items,
       value:
-        rootStore.getters["cart/totals"][
-          rootStore.getters["cart/totals"].length - 1
+        rootStore.getters["cart/getTotals"][
+          rootStore.getters["cart/getTotals"].length - 1
         ].value
     });
   });
